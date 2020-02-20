@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facilito Coffee</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
     <!-- import the webpage´s stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Facilito Coffee</title>
+    
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">LOGO</a>
@@ -41,13 +46,16 @@
     </div>
   </header>
 
+  <!-- Seccion de tres columnas -->
   <section>
     <div class="container mt-5 mb-5" >
       <div class="row justify-content-center">
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
           <div class="card">
-          <img src="img/cafe002.jpg" class="card-img-top" alt="Planta creciendo de la tierra">
+            <!--buscar imagenes en Unsplash.com-->
+            <div title="Planta creciendo de la tierra" class="cover cover-small" style="background-image: url(img/cafe002.jpg);">
+            </div>
             <div class="card-body">
             <h5 class="card-title">Cultivo ecologico responsable</h5>
             <p class="card-text">
@@ -59,7 +67,8 @@
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
           <div class="card">
-            <img src="img/cafe002.jpg" class="card-img-top" alt="Planta creciendo de la tierra">
+            <div title="Planta creciendo de la tierra" class="cover cover-small" style="background-image: url(img/cafe002.jpg);">
+            </div>
             <div class="card-body">
             <h5 class="card-title">Comercio justo </h5>
             <p class="card-text">
@@ -71,7 +80,8 @@
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
           <div class="card">
-          <img src="img/cafe002.jpg" class="card-img-top" alt="Planta creciendo de la tierra">
+            <div title="Planta creciendo de la tierra" class="cover cover-small" style="background-image: url(img/cafe002.jpg);">
+            </div>
             <div class="card-body">
             <h5 class="card-title">Pasion por el cafe</h5>
             <p class="card-text">
@@ -80,10 +90,26 @@
             </div>
           </div>
         </div>
-
       </div>    
     </div>
   </section>
 
+  <!-- Formulario -->
+  <section>
+    <div class="container mt-5 mb-5" >
+      <form action="">
+        <label for="email">Correo electronico</label>
+        <div class="d-flex">
+          <div class="flex-fill mr-2">
+            
+            <input type="email" id="email" class="form-control" />
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
